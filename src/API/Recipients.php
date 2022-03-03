@@ -81,7 +81,7 @@ class Recipients extends StannpPhp
     ) {
         $path = "/recipients/new";
         $params = array (
-            'firstname'    => $recipientFname,
+            'firstname'    => $recipientFName,
             'lastname'     => $recipientLName,
             'address1'     => $address1,
             'address2'     => $address2,
