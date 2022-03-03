@@ -1,5 +1,5 @@
 {
-    "name": "stannp/stannp-php",
+    "name": "joshyan/stannp-php",
     "type": "package",
     "description": "PHP SDK for the Stannp mail API",
     "license": "MIT",
