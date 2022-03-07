@@ -7,10 +7,10 @@
 
 
 namespace Stannp\API;
-use Stannp\StannpPhp as StannpPhp;
+use Stannp\StannpPHP as StannpPHP;
 
 
-class Reporting extends StannpPhp
+class Reporting extends StannpPHP
 {
     /**
      * Retrieves a status summary on individual items within a date range.

@@ -6,11 +6,11 @@
  */
 
 namespace Stannp\API;
-use Stannp\StannpPhp as StannpPhp;
+use Stannp\StannpPHP as StannpPHP;
 
 
 
-class Campaigns extends StannpPhp
+class Campaigns extends StannpPHP
 {
     /**
      * Returns object with all active campaigns
