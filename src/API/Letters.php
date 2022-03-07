@@ -6,11 +6,11 @@
  */
 
 namespace Stannp\API;
-use Stannp\StannpPHP as StannpPHP;
+use Stannp\StannpPhp as StannpPhp;
 
 
 
-class Letters extends StannpPHP
+class Letters extends StannpPhp
 {
     /**
      * Creates a letter

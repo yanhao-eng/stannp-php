@@ -8,10 +8,10 @@
 
 
 namespace Stannp\API;
-use Stannp\StannpPHP as StannpPHP;
+use Stannp\StannpPhp as StannpPhp;
 
 
-class User extends StannpPHP
+class User extends StannpPhp
 {
     /**
      * Return info about user

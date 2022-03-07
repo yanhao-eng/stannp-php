@@ -6,11 +6,11 @@
  */
 
 namespace Stannp\API;
-use Stannp\StannpPHP as StannpPHP;
+use Stannp\StannpPhp as StannpPhp;
 
 
 
-class Postcard extends StannpPHP 
+class Postcard extends StannpPhp 
 {
     /**
      * Sends a postcard
