@@ -99,6 +99,27 @@ class Campaigns extends StannpPHP
     }
 
 
+     /**
+     * Book a campaign
+     * 
+     * @param string $campaignId Name your campaign for reference..
+     * @param send_date $send_date The dispatch date of the campaign. Must be in a YYYY-MM-DD format. eg: 2022-03-07
+     * @param next_available_date $next_available_date Default as true. We will book the campaign on the next available date if your send date is not available. Set * to false if you want to receive an error if the date is not available.
+     * @param use_balance $use_balance Set to true to use your balance to pay for the campaign. Default is true. If you do not pay for the campaign using balance the * campaign will be scheduled but will not be posted till payment.
+     * 
+     * @return JSON  Encoded JSON object
+     */
+    public function book($campaignId) 
+    {
+        $path = "/campaigns/book";
+        $params = array(
+            "id" => $campaignId
+        );
+
+        return $this->postRequest($path, $params);
+    }
+
+
     /**
      * Delete a campaign
      * 
