@@ -6,11 +6,11 @@
  */
 
 namespace Stannp\API;
-use Stannp\StannpPhp as StannpPhp;
+use Stannp\StannpPHP as StannpPHP;
 
 
 
-class Recipients extends StannpPhp
+class Recipients extends StannpPHP
 {
     
     /**

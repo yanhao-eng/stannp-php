@@ -9,7 +9,7 @@ namespace Stannp;
 
 
 
-class StannpPhp
+class StannpPHP
 {
 
     protected $api_key = null;
