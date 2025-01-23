@@ -50,7 +50,7 @@ class Campaigns extends StannpPHP
      * 
      * @return JSON  Encoded JSON object
      */
-    public function new($campaignName, $campaignType, $templateId, $groupId, $whatRecipients = "all") 
+    public function new($campaignName, $campaignType, $templateId, $groupId, $whatRecipients = "all", $addons = "") 
     {
         $path = "/campaigns/create";
         $params = array(
@@ -60,6 +60,10 @@ class Campaigns extends StannpPHP
             "group_id" => $groupId,
             "what_recipients" => $whatRecipients
         );
+
+        if(!empty($addons)) {
+            $params["addons"] = $addons;
+        }
 
         return $this->postRequest($path, $params);
     }
